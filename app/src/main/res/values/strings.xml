@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bedrock</string>
+
+    <string name="feature_home">feature home</string>
+
+    <string name="home">Home</string>
+</resources>

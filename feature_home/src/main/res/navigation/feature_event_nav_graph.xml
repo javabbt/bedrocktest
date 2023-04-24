@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Id of navigation graph matches id of the bottom_nav_menu.xml item (to make bottom menu navigation work).-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/eventNavGraph"
+        app:startDestination="@id/eventListFragment">
+    <fragment
+            android:id="@+id/eventListFragment"
+            android:name="com.test.bedrock.feature.home.presentation.screen.events.EventsFragment"
+            android:label="HomeFragment">
+        <action
+                android:id="@+id/actionEventListToEventDetail"
+                app:destination="@id/eventDetailFragment" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/eventDetailFragment"
+            android:name="com.test.bedrock.feature.home.presentation.screen.eventdetail.EventDetailFragment"
+            android:label="EventDetailFragment">
+        <argument
+                android:name="name"
+                app:argType="string" />
+    </fragment>
+</navigation>
